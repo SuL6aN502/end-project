@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
     font-family: 'Tajawal', sans-serif;
 }
+
 /* --------------------------------------تنسيق القائمة العلوية----------------------------------------------- */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 5px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: #6F2DBD;
 }
 
-body{
+body {
     width: 100vw;
     overflow-x: hidden;
 }
-header{
+
+header {
     width: 100%;
     height: 10vh;
     background-color: #6F2DBD;
@@ -28,6 +32,7 @@ header{
     position: fixed;
     z-index: 1;
 }
+
 header div {
     height: 100%;
     width: 40%;
@@ -35,86 +40,147 @@ header div {
     align-items: center;
     justify-content: center;
 }
-header div{
-width: 30%;
-display: flex;
-align-items: center;
-justify-content: left;
-gap: 3%;
+
+header div {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 3%;
 }
-header div i{
+
+header div i {
     font-size: 2rem;
     color: aliceblue;
     cursor: pointer;
     transition: 0.3s;
 }
-header div i:hover{
-    color:#B9FAF8;
-    transform: translate(0,-2px);
+
+header div i:hover {
+    color: #B9FAF8;
+    transform: translate(0, -2px);
 }
-header div button{
-width: 8vw;
-height: 50%;
-border-radius: 8px;
-border: none;
-font-size: 1.5rem;
-background-color: #B9FAF8;
-color: #6F2DBD;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-cursor: pointer;
+/* اللغات والقائمة المنسدلة */
+header div button {
+    width: 8vw;
+    height: 50%;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #B9FAF8;
+    color: #6F2DBD;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    position: relative;
+    transition:border-radius 1s;
 }
-header div button svg{
+header div button:hover{
+    border-radius:8px 8px 0 0;
+}
+header div button ul {
+    height: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 90%;
+    background-color: #B9FAF8;
+    flex-direction: column;
+    transition: 0.3s;
+    text-align: center;
+}
+header div button:hover ul {
+    height:30vh;
+    overflow-y: scroll;
+}
+header div button:hover ul::-webkit-scrollbar {
+width: 1px;
+}
+header div button ul li{
+    display: none;
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+header div button ul li:hover{
+transform: translate(0,-3px);
+color: #222;
+}
+header div button:hover ul li{
+    display: block;
+}
+
+header div button svg {
     height: 25%;
 }
-header > nav{
+header div button ul {
+
+}
+
+header>nav {
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-header > nav ul{
+
+.main-click {
+    display: none;
+}
+
+.main-menu {
+    display: none;
+}
+
+header>nav ul {
     height: auto;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 2%;
 }
-header > nav ul hr{
+
+header>nav ul hr {
     border: none;
     width: 1px;
     height: 5vh;
-    background:linear-gradient(180deg,aliceblue,#6F2DBD);
+    background: linear-gradient(180deg, aliceblue, #6F2DBD);
     transform: rotate(180deg);
 }
-header > nav ul li{
-display: flex;
-align-items: center;
-justify-content: center;
-list-style: none;
+
+header>nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
 }
-.logo{
-    height:7vh;
+
+.logo {
+    margin-left: 20px;
+    height: 7vh;
     cursor: pointer;
 }
-header > nav ul li a{
-width: 100%;
-color: aliceblue;
-display: flex;
-align-items: center;
-justify-content: center;
-text-decoration: none;
-font-size: 1.3rem;
-font-weight: 400;
-position: relative;
-transition: 0.5s;
+
+header>nav ul li a {
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+    transition: 0.5s;
 }
-header > nav ul li a:hover{
-    transform: translate(0,-2px);
+
+header>nav ul li a:hover {
+    transform: translate(0, -2px);
 }
-header > nav ul li a::before{
+
+header>nav ul li a::before {
     content: '';
     width: 0;
     height: 2px;
@@ -122,10 +188,101 @@ header > nav ul li a::before{
     position: absolute;
     right: 0;
     bottom: -3px;
-    transition:0.4s;
+    transition: 0.4s;
 }
-header > nav ul li a:hover::before{
-width: 100%;
+
+header>nav ul li a:hover::before {
+    width: 100%;
 }
+
 /* --------------------------------------تنسيق اسفل الصفحة----------------------------------------------- */
-footer{}
+footer {}
+
+@media (max-width:500px) {
+    header nav ul {
+        display: none;
+    }
+
+    header div button {
+        display: none;
+    }
+
+    header div {
+        gap: 10%;
+    }
+
+    header>nav {
+        justify-content: right;
+    }
+
+    header>nav>div>span {
+        width: 100%;
+        height: 4px;
+        background-color: #B9FAF8;
+    }
+
+    .main-click {
+        flex-direction: column;
+        gap: 20%;
+        display: flex;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .main-menu {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-color: #b9faf8e5;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        top: 0;
+        transition: 0.3s;
+        display: flex;
+    }
+
+    .main-menu ul {
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-menu li {
+        list-style: none;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-menu li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #111;
+        font-size: 2rem;
+        transition: 0.4s;
+    }
+
+    .main-menu li a:hover {
+        color: #6F2DBD;
+    }
+
+    .show-menu {
+        height: 60vh;
+        transition: 0.3s;
+    }
+
+    ::-webkit-scrollbar {
+        width: 1px;
+    }
+}

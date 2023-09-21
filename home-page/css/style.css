@@ -41,10 +41,11 @@ color: aliceblue;
 transition: 0.3s;
 }
 main section:nth-child(1) hgroup button:hover{
-transform: translate(0,-5px);
 background: #B9FAF8;
 color: #6F2DBD;
 cursor: pointer;
+transform: translate(0,-5px);
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 main section:nth-child(1) svg{
     height: 60%;
@@ -63,27 +64,51 @@ gap: 10vh;
 main section:nth-child(2) h2{
     font-size: 7rem;
 }
-main section:nth-child(2) div:nth-child(2){
+.contemer-card{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-main section:nth-child(2) div:nth-child(2) svg{
-    width: 25%;
-}
-main section:nth-child(2) div:nth-child(3){
-    width: 100%;
+.contemer-card div{
+    width: 45%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 10vh;
 }
-main section:nth-child(2) div:nth-child(3) button{
-    width: 20%;
+.contemer-card div svg{
+    width: 100%;
+}
+.contemer-card div button{
+    width: 50%;
     height: 7vh;
     border-radius: 11px;
     background-color: #6F2DBD;
     font-size: 1.6rem;
     color: aliceblue;
     transition: 0.3s;
+}
+/* تناسق الصفحة مع احجام الشاشات */
+@media (max-width:500px){
+    main section:nth-child(1) svg{
+        display: none;
+    }
+    main section:nth-child(1) hgroup{
+        width: 100%;
+    }
+    main section:nth-child(1) hgroup h1{
+
+    }
+    main section:nth-child(1) hgroup p{
+        width: 95%;
+    }
+    main section:nth-child(2) div:nth-child(2){
+        flex-direction: column;
+    }
+    main section:nth-child(2) div:nth-child(2) svg{
+        width: 90%;
+    }
+
 }
