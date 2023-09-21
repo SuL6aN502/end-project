@@ -41,7 +41,7 @@ color: aliceblue;
 transition: 0.3s;
 }
 main section:nth-child(1) hgroup button:hover{
-background: #B9FAF8;
+background: #95d3ce;
 color: #6F2DBD;
 cursor: pointer;
 transform: translate(0,-5px);
