@@ -87,8 +87,11 @@ header div button ul {
     top: 90%;
     background-color: #B9FAF8;
     flex-direction: column;
+    justify-content: space-around;
     transition: 0.3s;
     text-align: center;
+    border-radius: 0 0 8px 8px;
+    
 }
 header div button:hover ul {
     height:30vh;
@@ -187,7 +190,7 @@ header>nav ul li a::before {
     background-color: #B9FAF8;
     position: absolute;
     right: 0;
-    bottom: -3px;
+    bottom: -4px;
     transition: 0.4s;
 }
 
