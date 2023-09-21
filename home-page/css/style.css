@@ -62,7 +62,7 @@ justify-content: center;
 gap: 10vh;
 }
 main section:nth-child(2) h2{
-    font-size: 7rem;
+    font-size: 5.5rem;
 }
 .contemer-card{
     width: 100%;
@@ -82,13 +82,27 @@ main section:nth-child(2) h2{
     width: 100%;
 }
 .contemer-card div button{
-    width: 50%;
-    height: 7vh;
-    border-radius: 11px;
+    border:1.5px solid #6F2DBD;
+    background-color: transparent ;
+    padding:1.5%;
+    width: 14vw;
+    height:7vh;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #1e1b30;
+    font-size: 15px;
+    word-spacing: 2px;
+    font-family: 'Noto Naskh Arabic';
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.4s;
+    font-size: 1.8rem;
+}
+.contemer-card div button:hover{
     background-color: #6F2DBD;
-    font-size: 1.6rem;
-    color: aliceblue;
-    transition: 0.3s;
+    color: white;
+    transition: 0.4s;
+    transform: translate(0,-10px);
 }
 /* تناسق الصفحة مع احجام الشاشات */
 @media (max-width:500px){
