@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/Shared files/style.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="/fonts/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
         <!-- روابط القائمة العلوية -->
         <nav>
             <ul>
-                <li data-aos="fade-down"><a href="">
+                <li data-aos="fade-down"><a href="/about-us/html/index.html">
                         من نحن
                     </a></li>
                 <hr>
@@ -49,7 +50,7 @@
                         الفعليات
                     </a></li>
                 <hr>
-                <li data-aos="fade-down"><a href="">
+                <li data-aos="fade-down"><a href="/home-page/html/index.html">
                         الرئيسية
                     </a></li>
                 <li data-aos="fade-left">
@@ -89,43 +90,43 @@
     </header>
     <main>
         <section>
-            <img src="/about-us/imges/img-sect1.svg" alt="">
+            <img src="/about-us/imges/img-sect1.svg" alt="" data-aos="fade-right">
             <hgroup>
-                <h2>من نَحْنُ</h2>
-                <p>نحن فريق متخصص في تقديم تجارب السفر المميزة بالمملكة العربية السعودية. تأسست شركتنا لتلبية احتياجات
+                <h2 data-aos="fade-left">من نَحْنُ</h2>
+                <p data-aos="fade-left">نحن فريق متخصص في تقديم تجارب السفر المميزة بالمملكة العربية السعودية. تأسست شركتنا لتلبية احتياجات
                     الزوار، سواء في الجولات السياحية أو النقل الشخصي. مهمتنا هي جعل زيارتكم للمملكة تجربة لا تُنسى بفضل
                     فريقنا المحترف والخدمة الراقية التي نقدمها.</p>
             </hgroup>
         </section>
         <section></section>
         <section>
-            <h2>ميزاتنا</h2>
+            <h2 data-aos="fade-up">ميزاتنا</h2>
             <div class="cards">
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <i class="fa-solid fa-car" style="color: #6f2dbd;"></i>
                     <h3>النقل الشخصي</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <i class="fa-solid fa-plane" style="color: #6f2dbd;"></i>
                     <h3>نقل سياحي مريح</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <i class="fa-solid fa-user" style="color: #6f2dbd;"></i>
                     <h3>واجهة مستخدم سهلة الاستعمال</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <i class="fa-solid fa-calendar-days" style="color: #6f2dbd;"></i>
                     <h3>
                         حجز فعاليات وجولات سياحية
                     </h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <i class="fa-solid fa-book" style="color: #6d2bbd;"></i>
                     <h3>
                         توفير دليل سياحي
                     </h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <i class="fa-solid fa-phone" style="color: #6d2dbd"></i>
                     <h3>
                         توفير خدمات الاتصال
@@ -137,6 +138,11 @@
     <footer>
 
     </footer>
+    <script src="/Shared files/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

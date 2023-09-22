@@ -20,6 +20,9 @@
 body {
     width: 100vw;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
 }
 
 header {
@@ -29,8 +32,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: fixed;
+    /* position: fixed; */
     z-index: 1;
+    border-bottom: #111 1px solid;
 }
 
 header div {
@@ -79,6 +83,13 @@ header div button {
 header div button:hover{
     border-radius:8px 8px 0 0;
 }
+header div button svg{
+transition: 0.5s;
+transform: rotate(360deg);
+}
+header div button:hover svg{
+transform: rotate(180deg);
+}
 header div button ul {
     height: 0;
     width: 100%;
@@ -91,7 +102,7 @@ header div button ul {
     transition: 0.3s;
     text-align: center;
     border-radius: 0 0 8px 8px;
-    
+
 }
 header div button:hover ul {
     height:30vh;
@@ -199,8 +210,114 @@ header>nav ul li a:hover::before {
 }
 
 /* --------------------------------------تنسيق اسفل الصفحة----------------------------------------------- */
-footer {}
+footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #111;
+    display: flex;
+    padding: 3% 3% 0% 3%;
+}
+footer section:nth-child(1){
+    width:100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    gap: 10%;
+}
 
+footer section:nth-child(1) div:nth-child(1){
+height: 100%;
+width: 20%; 
+display: flex;
+flex-direction: column;
+align-items: end;
+justify-content: center;
+gap: 20%;
+}
+footer section:nth-child(1) div{
+width: 25%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: end;
+flex-wrap: wrap;
+}
+footer section:nth-child(1) div ul{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 4%;
+flex-wrap: wrap;
+}
+footer section:nth-child(1) div h3{
+color: #6F2DBD;
+font-size: xx-large;
+}
+footer section:nth-child(1) div ul li{
+color: aliceblue;
+width: 80%;
+font-size: x-large;
+list-style: none;
+display: flex;
+justify-content: right;
+flex-direction: row-reverse;
+gap: 5%;
+border-right:1px solid #6F2DBD;
+padding-right: 10px;
+padding-bottom: 10px;
+}
+footer section:nth-child(1) div ul li:hover{
+
+}
+footer section:nth-child(1) div ul li a{
+text-decoration: none;
+color: aliceblue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+footer section:nth-child(1) div:nth-child(1) form{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: end;
+gap: 2vh;
+}
+footer section:nth-child(1) div input {
+    text-align: right;
+    width: 90%;
+    border: none;
+    background: none;
+    border-bottom:1px solid #6F2DBD;
+    font-size: x-large;
+    padding: 1%;
+}
+footer section:nth-child(1) div label {
+font-size: xx-large;
+color: aliceblue;
+}
+footer section:nth-child(1) div button {
+    border: #6F2DBD 1px solid;
+    color: aliceblue;
+    background: none;
+    border-radius: 8px;
+    width:35%;
+    height: 15%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+footer section:nth-child(1) div button:hover{
+    background: aliceblue;
+    color: #6F2DBD;
+    transform: translate(0,-5px);
+}
+
+/* جعل التنسيقات المشتركة متناسقة مع الجوال */
 @media (max-width:500px) {
     header nav ul {
         display: none;
