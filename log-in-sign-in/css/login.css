@@ -1,0 +1,72 @@
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2% 0 2%;
+}
+
+main img:nth-child(1){
+    width: 60%;
+    height:90vh;
+}
+main section:nth-child(2){
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section:nth-child(2) form{
+width: 70%;
+height: 70%;
+border-radius: 25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color:#6F2DBD;
+gap: 8%;
+}
+a{
+    color: #B9FAF8;
+}
+main section:nth-child(2) form h2{
+color: aliceblue;
+font-weight:999;
+font-size: 1.4rem;
+}
+main section:nth-child(2) form p{
+    font-size: large;
+color: aliceblue;
+}
+main section:nth-child(2) form input{
+    width: 50%;
+    text-align: right;
+    background: none;
+    color: aliceblue;
+    border-bottom: 1px solid #B9FAF8;
+    font-size: 1rem;
+    padding: 1%;
+}
+main section:nth-child(2) form input::placeholder{
+ color: aliceblue;   
+ font-size: large;
+}
+main section:nth-child(2) form button{
+width: 50%;
+height: 10%;
+border-radius:8px;
+cursor: pointer;
+font-size: x-large;
+font-weight: 300;
+background: none;
+border: #B9FAF8 1px solid;
+color: aliceblue;
+transition: 0.3s;
+}
+main section:nth-child(2) form button:hover{
+color: #222;
+background-color: #B9FAF8;
+transform: translate(0,-5px);
+}
