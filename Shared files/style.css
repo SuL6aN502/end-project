@@ -14,12 +14,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #6F2DBD;
+    background-color: #7BA05B;
 }
 
 body {
     width: 100vw;
     overflow-x: hidden;
+    background: whitesmoke;
 }
 
 header {
