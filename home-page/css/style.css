@@ -160,12 +160,18 @@ align-items: center;
 }
 .card-img:nth-child(1){
 background: url(../imges/1.jpg)center;
+background-size: cover;
 }
 .card-img:nth-child(2){
     background: url(../imges/2.jpg)center;
+background-size: cover;
+
 }
 .card-img:nth-child(3){
     background: url(../imges/3.jpg)center;
+    background-size: cover;
+
+
 }
 
 /* تناسق الصفحة مع احجام الشاشات */

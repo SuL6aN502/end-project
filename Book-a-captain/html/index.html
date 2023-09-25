@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرحلات</title>
+    <link rel="stylesheet" href="/fonts/css/all.min.css">
+    <link rel="icon" href="/home-page/imges/icon.png">
+    <link rel="stylesheet" href="/Shared files/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.scss">
+    <script type="text/javascript" src="../html5countrymapv4.2/mapdata.js"></script>
+    <script type="text/javascript" src="../html5countrymapv4.2/countrymap.js"></script>
+</head>
+
+<body>
+    <header>
+        <div data-aos="fade-right">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="13" viewBox="0 0 21 13" fill="none">
+                    <path d="M0.8125 0.625L10.5 12.25L20.1875 0.625H0.8125Z" fill="#6F2DBD" />
+                </svg>
+                العربية
+                <ul>
+                    <li>English</li>
+                    <li>Français</li>
+                    <li>Español</li>
+                    <li>Deutsch</li>
+                    <li>Italiano</li>
+                    <li>Türkçe</li>
+                </ul>
+            </button>
+            <i class="fa-regular fa-circle-user"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <!-- روابط القائمة العلوية -->
+        <nav>
+            <ul>
+                <li data-aos="fade-down"><a href="/about-us/html/index.html">
+                        من نحن
+                    </a></li>
+                <hr>
+                <li data-aos="fade-down"><a href="">
+                        احجز كابتن
+                    </a></li>
+                <hr>
+                <li data-aos="fade-down"><a href="/Book-a-captain/html/index.html">
+                        احجز رحلة
+                    </a></li>
+                <hr>
+                <li data-aos="fade-down"><a href="">
+                        الفعليات
+                    </a></li>
+                <hr>
+                <li data-aos="fade-down"><a href="/home-page/html/index.html">
+                        الرئيسية
+                    </a></li>
+                <li data-aos="fade-left">
+                    <img src="/home-page/imges/Free_Sample_By_Wix (1).jpg" class="logo">
+                    <!-- الشعار -->
+                </li>
+            </ul>
+            <div id="main-click" class="main-click">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="main-menu" id="main-menu">
+            <ul id="main-menu-ul">
+                <li><a href="">
+                        من نحن
+                    </a></li>
+                <hr>
+                <li><a href="">
+                        احجز كابتن
+                    </a></li>
+                <hr>
+                <li><a href="">
+                        احجز رحلة
+                    </a></li>
+                <hr>
+                <li><a href="">
+                        الفعليات
+                    </a></li>
+                <hr>
+                <li><a href="">
+                        الصفحة الرئيسية
+                    </a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section>
+            <hgroup>
+                <h2>الرحلات</h2>
+                <p>لأن رفاهيتك تهمنا سهلناها عليك احجز رحلتك بسهولة</p>
+                <button>المزيد</button>
+            </hgroup>
+        </section>
+        <!-- القسم الثاني -->
+        <section>
+            <form>
+                <h2>اختر المنطقة</h2>
+                <span class="content">
+                    <div id="map"></div>
+                </span>
+                <div class="btns">
+                    <button>رجوع</button>
+                    <button>تقدم</button>
+                </div>
+            </form>
+            <form>
+                <h2>اختر عدد ايام الاقامة</h2>
+                <span class="content">
+                    <label for="From">من تاريخ</label>
+                    <input type="date" id="From" value="2023-09-25">
+                    <label for="to">الى تاريخ</label>
+                    <input type="date" id="to" value="2023-09-26">
+                </span>
+                <div class="btns">
+                    <button>رجوع</button>
+                    <button>تقدم</button>
+                </div>
+            </form>
+            <form>
+                <h2>ادخل عدد الافراد</h2>
+                <span class="content">
+                    <div class="buttons">
+                        <div id="add1">شخص واحد</div>
+                        <div id="add2">شخصان</div>
+                        <div id="add3">ثلاث اشخاص</div>
+                        <div><input type="number" placeholder="ادخل العدد"></div>
+                    </div>
+                </span>
+                <div class="btns">
+                    <button>رجوع</button>
+                    <button>تقدم</button>
+                </div>
+            </form>
+            <form>
+                <h2>نوع المركبة</h2>
+                <span class="content">
+                    <div class="buttons tgrid3">
+                        <div id="add1-2"><img src="../imges/Sedan.png" alt="سيدان"></div>
+                        <div id="add2-2"><img src="../imges/crossover.png" alt="كروس اوفر"></div>
+                        <div id="add3-2"><img src="../imges/van.png" alt=""></div>
+                    </div>
+                </span>
+                <div class="btns">
+                    <button>رجوع</button>
+                    <button>تقدم</button>
+                </div>
+            </form>
+            <form>
+                <form class="nistd-forn">
+                    <h2>ادخل عدد الافراد</h2>
+                    <label for="ginder">جنس المرشد</label>
+                    <select id="ginder">
+                        <option value="">ذكر</option>
+                        <option value="">انثى</option>
+                    </select>
+                    <label for="lang">لغات المرشد</label>
+                    <select id="lang">
+                        <option value="">English</option>
+                        <option value="">Français</option>
+                        <option value="">Español</option>
+                        <option value="">Deutsch</option>
+                        <option value="">Italiano</option>
+                        <option value="">Türkçe</option>
+                    </select>
+                    <div class="btns">
+                        <button>رجوع</button>
+                        <button>تقدم</button>
+                    </div>
+                </form>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/Shared files/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

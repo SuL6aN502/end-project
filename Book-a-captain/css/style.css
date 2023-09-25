@@ -1,0 +1,221 @@
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:nth-child(1) {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main section:nth-child(1) hgroup {
+    color: #222;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+    transition: 0.7s;
+}
+
+main section:nth-child(1) hgroup h2 {
+    font-size: 4rem;
+}
+
+main section:nth-child(1) hgroup p {
+    font-size: 2rem;
+    width: 80%;
+}
+
+main section:nth-child(1) hgroup button {
+    width: 20%;
+    height: 7%;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: black;
+    color: aliceblue;
+    font-size: x-large;
+    transition: 0.4s;
+}
+
+main section:nth-child(1) hgroup button:hover {
+    background: none;
+    border: #222 1px solid;
+    color: #222;
+    transform: translate(0, -5px);
+}
+
+section:nth-child(1) video {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* -----------تنسيق النماذج----------------------------------------------------------------------------------- */
+main section:nth-child(2) {
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+main section form {
+    width: 40%;
+    height: 75vh;
+    background-color: #7ba05b5c;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+main section form h2 {
+    font-size: 2.2rem;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 2vh;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 1%;
+}
+
+main section form .btns button:nth-child(1) {
+    width: 20%;
+    height: 7vh;
+    cursor: pointer;
+    border-radius: 25px;
+    background: none;
+    border: #222 1px solid;
+    color: #222;
+    font-size: x-large;
+    transition: 0.4s;
+}
+
+main section form .btns button:nth-child(2) {
+    width: 20%;
+    height: 7vh;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #222;
+    color: aliceblue;
+    font-size: x-large;
+    transition: 0.4s;
+}
+
+main section form .btns button:nth-child(2):hover {
+    background: none;
+    border: #222 1px solid;
+    color: #222;
+    transform: translate(0, -5px);
+}
+
+main section form .btns button:nth-child(1):hover {
+    background-color: #222;
+    color: aliceblue;
+    transform: translate(0, -5px);
+}
+/* ألنموذج الثاني */
+main section form:nth-child(2) input{
+    font-size: 1.6rem;
+    background: none;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    gap:5%;
+}
+/* النموذج الثالث*/
+.buttons{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: right;
+}
+.tgrid3{
+    grid-template-columns: repeat(3,1fr);
+}
+.buttons div{
+border: #222 1px solid;
+cursor: pointer;
+transition: 0.3s;
+text-align: center;
+display: grid;
+justify-content: center;
+align-items: center;
+font-size: large;
+}
+.buttons div:first-child{
+border-radius: 25px 0 0px 25px;
+}
+.buttons div:last-child{
+    border-radius: 0px 25px 25px 0px;
+}
+.buttons div input{
+text-align: right;
+font-size: 1.5rem;
+width: 100%;
+background: none;
+border-bottom: #222 1px solid;
+}
+.buttons div input:focus{
+ outline: none;   
+}
+.onclick{
+    background-color: white;
+    color: #111;
+    filter: invert(1);
+}
+/* النموذج الرابع*/
+.buttons div img{
+    width: 100%;
+    transition: 0.3s;
+}
+#add3-2{
+    transform:rotateY(180deg);
+    border-radius: 25px 0px 0px 25px;
+}
+
+select{
+    width: 25%;
+    height: 10%;
+    font-size: large;
+    display: flex;
+    text-align: right;
+    border: #111 1px solid;
+    border-radius:25px;
+    background: none;
+}
+
+.nistd-forn{
+    width: 100%;
+    background-color: #111;
+    align-items: end;
+}
