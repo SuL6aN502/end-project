@@ -59,7 +59,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 gap: 10vh;
-background-color: #7BA05B;
+background-color: #956c9e;
 color: aliceblue;
 }
 main section:nth-child(2) h2{
@@ -159,13 +159,19 @@ align-items: center;
     color: #111;
 }
 .card-img:nth-child(1){
-background: url(../imges/1.jpg)center;
+background: url(../imges/1.jpg)center no-repeat;
+background-size: cover;
+
 }
 .card-img:nth-child(2){
-    background: url(../imges/2.jpg)center;
+    background: url(../imges/2.jpg)center no-repeat;
+    background-size: cover;
+
 }
 .card-img:nth-child(3){
-    background: url(../imges/3.jpg)center;
+    background: url(../imges/3.jpg)center no-repeat;
+    background-size: cover;
+
 }
 
 /* تناسق الصفحة مع احجام الشاشات */
