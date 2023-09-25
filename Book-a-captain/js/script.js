@@ -8,6 +8,18 @@ let btn1_2 = document.getElementById('add1-2');
 let btn2_2 = document.getElementById('add2-2');
 let btn3_2 = document.getElementById('add3-2');
 
+let checkbox = document.getElementById('checkbox');
+let form1 = document.getElementById('dis');
+
+
+console.log(checkbox.value);
+checkbox.addEventListener('click', ()=>{
+    if(checkbox.checked == true){
+        form1.style.display = 'flex';
+    }else{
+        form1.style.display = 'none'
+    }
+})
 btn1.addEventListener('click',()=>{
     btn1.classList.add('onclick');
     btn2.classList.remove('onclick');

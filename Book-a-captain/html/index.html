@@ -97,7 +97,7 @@
             <hgroup>
                 <h2>الرحلات</h2>
                 <p>لأن رفاهيتك تهمنا سهلناها عليك احجز رحلتك بسهولة</p>
-                <button>المزيد</button>
+                <a>المزيد</a>
             </hgroup>
         </section>
         <!-- القسم الثاني -->
@@ -108,21 +108,23 @@
                     <div id="map"></div>
                 </span>
                 <div class="btns">
-                    <button>رجوع</button>
-                    <button>تقدم</button>
+                    <a>رجوع</a>
+                    <a>تقدم</a>
                 </div>
             </form>
             <form>
                 <h2>اختر عدد ايام الاقامة</h2>
-                <span class="content">
-                    <label for="From">من تاريخ</label>
-                    <input type="date" id="From" value="2023-09-25">
-                    <label for="to">الى تاريخ</label>
-                    <input type="date" id="to" value="2023-09-26">
-                </span>
+                <div class="nistd-forn">
+                    <span class="content">
+                        <label for="From">من تاريخ</label>
+                        <input type="date" id="From" value="2023-09-25">
+                        <label for="to">الى تاريخ</label>
+                        <input type="date" id="to" value="2023-09-26">
+                    </span>
+                </div>
                 <div class="btns">
-                    <button>رجوع</button>
-                    <button>تقدم</button>
+                    <a>رجوع</a>
+                    <a>تقدم</a>
                 </div>
             </form>
             <form>
@@ -136,8 +138,8 @@
                     </div>
                 </span>
                 <div class="btns">
-                    <button>رجوع</button>
-                    <button>تقدم</button>
+                    <a>رجوع</a>
+                    <a>تقدم</a>
                 </div>
             </form>
             <form>
@@ -150,13 +152,13 @@
                     </div>
                 </span>
                 <div class="btns">
-                    <button>رجوع</button>
-                    <button>تقدم</button>
+                    <a>رجوع</a>
+                    <a>تقدم</a>
                 </div>
             </form>
             <form>
-                <form class="nistd-forn">
-                    <h2>ادخل عدد الافراد</h2>
+                <h2>المرشد السياحي</h2>
+                <div class="nistd-forn">
                     <label for="ginder">جنس المرشد</label>
                     <select id="ginder">
                         <option value="">ذكر</option>
@@ -171,11 +173,34 @@
                         <option value="">Italiano</option>
                         <option value="">Türkçe</option>
                     </select>
-                    <div class="btns">
-                        <button>رجوع</button>
-                        <button>تقدم</button>
-                    </div>
-                </form>
+                </div>
+                <div class="btns">
+                    <a>رجوع</a>
+                    <a>تقدم</a>
+                </div>
+            </form>
+            <form>
+                <h2>الفندق</h2>
+                <div class="checkbox">
+                    <label for="checkbox">لم تقم بحجز فندق بعد؟</label>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="nistd-forn" id="dis" style="display: none;">
+                    <label for="ginder">نجوم الفندق</label>
+                    <select id="ginder">
+                        <option value="">⭐⭐⭐⭐⭐</option>
+                        <option value="">⭐⭐⭐⭐</option>
+                        <option value="">⭐⭐⭐</option>
+                    </select>
+                    <label for="lang"></label>
+                    <select id="lang">
+
+                    </select>
+                </div>
+                <div class="btns">
+                    <a>رجوع</a>
+                    <a>تقدم</a>
+                </div>
             </form>
         </section>
     </main>
