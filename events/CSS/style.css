@@ -1,0 +1,90 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+    align-items: center;
+}
+main section:nth-child(1){
+    width:100%;
+    height:30vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:end;
+    align-items:center;
+    gap: 10%;
+}
+main section:nth-child(1) div{
+width: 40%;
+height: 30%;
+display: flex;
+justify-content: end;
+
+}
+main section:nth-child(1) div img{
+    height: 100%;
+    transform: rotate(-90deg);
+    transition: 0.2s filter;
+}
+main section:nth-child(1) div img:hover{
+filter: invert(1);
+}
+main section:nth-child(1) input{
+    width: 40%;
+    height: 7vh;
+    text-align: right;
+    padding: 1%;
+    border-radius: 25px;
+    box-shadow: 0 0 100px 1px #5B3E7B;
+    transition: 0.3s;
+    font-size: large;
+}
+main section:nth-child(1) input:hover{
+    box-shadow: 0 0 75px 15px #5B3E7B;
+    transform: translate(0,-4px);
+}
+main section:nth-child(1) input:focus{
+    box-shadow: 0 0 75px 15px #5B3E7B;
+    transform: translate(0,-4px);
+    outline: none;
+}
+main section:nth-child(2) {
+    width: 100%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-auto-rows: minmax(40vh, auto);
+    grid-template-areas: 
+    'i3 i2 i1 i1'
+    'i4 i5 i1 i1'
+    'i6 i7 i8 i8'
+    'i10 i10 i8 i8'
+    'i10 i10 i11 i12';
+    gap: 3%;
+    background-color: #5b3e7b44;
+}
+
+main section:nth-child(2) div:nth-child(1) { grid-area: i1; }
+main section:nth-child(2) div:nth-child(2) { grid-area: i2; }
+main section:nth-child(2) div:nth-child(3) { grid-area: i3; }
+main section:nth-child(2) div:nth-child(4) { grid-area: i4; }
+main section:nth-child(2) div:nth-child(5) { grid-area: i5; }
+main section:nth-child(2) div:nth-child(6) { grid-area: i6; }
+main section:nth-child(2) div:nth-child(7) { grid-area: i7; }
+main section:nth-child(2) div:nth-child(8) { grid-area: i8; }
+main section:nth-child(2) div:nth-child(9) { grid-area: i9; }
+main section:nth-child(2) div:nth-child(10) { grid-area: i10; }
+main section:nth-child(2) div:nth-child(11) { grid-area: i11; }
+main section:nth-child(2) div:nth-child(12) { grid-area: i12; }
+
+main section:nth-child(2) div a {
+    width: 100%;
+    height: 100%;
+}
+
+main section:nth-child(2) div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}

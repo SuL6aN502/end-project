@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    direction: rtl;
+}
+
+main section:nth-child(1){
+    width: 100%;
+    height: 40vh;
+    background-color: #5A3E7A;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section:nth-child(1) h1{
+font-size: 3rem;
+}
+main section:nth-child(2){
+    width: 100%;
+    padding: 5%;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
