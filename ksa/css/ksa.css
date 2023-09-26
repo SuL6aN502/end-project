@@ -1,0 +1,150 @@
+main{
+    width: 100%;
+}
+main section:nth-child(1){
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0 0 0;
+    gap: 5%;
+}
+main section:nth-child(1) img{
+width: 35%;
+height: 100%;
+border-radius: 50px;
+}
+main section:nth-child(1) hgroup{
+width: 45%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: end;
+flex-direction: column;
+text-align: right;
+padding: 3%;
+gap: 8%;
+}
+main section:nth-child(1) hgroup h2{
+    font-size: 4.8rem;
+}
+main section:nth-child(1) hgroup p{
+    width: 100%;
+    font-size: 1.8rem;
+}
+main section:nth-child(1) hgroup button{
+width: 23%;
+height: 6vh;
+border-radius: 50px;
+background-color: #5B3E7B;
+font-size: 1.6rem;
+color: aliceblue;
+transition: 0.3s;
+}
+main section:nth-child(1) hgroup button:hover{
+    background: #725895;
+color: white;
+cursor: pointer;
+transform: translate(0,-5px);
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+/* تنسيق 2 */
+
+main section:nth-child(2){
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    }
+    .cards-img{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    .card-img{
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 25px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    padding: 1.5%;
+    gap: 2%;
+    }
+    .card-img h3{
+        font-size:2rem;
+    }
+    .card-img p{
+        font-size: 1.5rem;
+    }
+    .card-img a{
+    width: 40%;
+    height:6%;
+    background: #d9d9d94d;
+    border-radius: 13px;
+    color: aliceblue;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .card-img a:hover{
+        background: #d9d9d9;  
+        transform: translate(0,-3px);
+        color: #111;
+    }
+    .card-img:nth-child(1){
+    background: url(../image/download\ \(1\).jpg)center no-repeat;
+    background-size: cover;
+    
+    }
+    .card-img:nth-child(2){
+        background: url(../image/جبل\ سلا.jpg)center no-repeat;
+        background-size: cover;
+    
+    }
+    .card-img:nth-child(3){
+        background: url(../imges/3.jpg)center no-repeat;
+        background-size: cover;
+    
+    }
+    .card-img:nth-child(4){
+        background: url(../imges/3.jpg)center no-repeat;
+        background-size: cover;
+    
+    }
+    .card-img:nth-child(5){
+        background: url(../imges/3.jpg)center no-repeat;
+        background-size: cover;
+    
+    }
+    .card-img:nth-child(6){
+        background: url(../imges/3.jpg)center no-repeat;
+        background-size: cover;
+    
+    }
+    .card-img:nth-child(7){
+        background: url(../imges/3.jpg)center no-repeat;
+        background-size: cover;
+    
+    }
+    .card-img:nth-child(8){
+        background: url(../imges/3.jpg)center no-repeat;
+        background-size: cover;
+    
+    }
+    .card-img:nth-child(9){
+        background: url(../imges/3.jpg)center no-repeat;
+        background-size: cover;
+    
+    }
