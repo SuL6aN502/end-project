@@ -53,7 +53,7 @@ main section:nth-child(2) form input::placeholder{
  color: aliceblue;   
  font-size: large;
 }
-main section:nth-child(2) form button{
+main section:nth-child(2) form > a{
 width: 40%;
 height: 10%;
 border-radius:50px;
@@ -64,8 +64,11 @@ background: none;
 border: #B9FAF8 1px solid;
 color: aliceblue;
 transition: 0.3s;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-main section:nth-child(2) form button:hover{
+main section:nth-child(2) form > a:hover{
 color: #222;
 background-color: #B9FAF8;
 transform: translate(0,-5px);

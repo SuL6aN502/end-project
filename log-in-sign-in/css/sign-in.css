@@ -1,0 +1,78 @@
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2% 0 2%;
+}
+
+main img:nth-child(1){
+    width: 45%;
+    height:90vh;
+}
+main section:nth-child(2){
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section:nth-child(2) div{
+width: 65%;
+height: 75%;
+border-radius: 25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color:#5B3E7B;
+gap: 7%;
+}
+a{
+    color: #B9FAF8;
+}
+main section:nth-child(2) div h2{
+color: aliceblue;
+font-weight:530;
+font-size: 1.4rem;
+}
+main section:nth-child(2) div p{
+    font-size: large;
+color: aliceblue;
+}
+main section:nth-child(2) div input{
+    width: 50%;
+    text-align: right;
+    background: none;
+    color: aliceblue;
+    border-bottom: 1px solid #B9FAF8;
+    font-size: 1rem;
+    padding: 1%;
+}
+main section:nth-child(2) div input::placeholder{
+ color: aliceblue;   
+ font-size: large;
+}
+main section:nth-child(2) div > a{
+width: 40%;
+height: 10%;
+border-radius:50px;
+cursor: pointer;
+font-size: x-large;
+font-weight: 400;
+background: none;
+border: #B9FAF8 1px solid;
+color: aliceblue;
+transition: 0.3s;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+main section:nth-child(2) div > a:hover{
+color: #222;
+background-color: #B9FAF8;
+transform: translate(0,-5px);
+}
+
