@@ -1,0 +1,21 @@
+section:nth-child(1){
+    width: 100%;
+    height: 45vh;
+    background: url(https://www.almrsal.com/wp-content/uploads/2022/06/%D8%A4-2.jpg) center no-repeat;
+    background-size: cover;
+}
+section:nth-child(2){
+    width: 100%;
+    padding: 5%;
+    direction: rtl;
+}
+section:nth-child(2) hgroup h1{
+    font-size: 3rem;
+}
+section:nth-child(2) hgroup p{
+    font-size: 1.3rem;
+}
+span{
+
+    color: #956C9E;
+}
