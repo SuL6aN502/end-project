@@ -49,6 +49,9 @@ main section:nth-child(2) form input{
     font-size: 1rem;
     padding: 1%;
 }
+main section:nth-child(2) form input:focus{
+    outline: none;
+}
 main section:nth-child(2) form input::placeholder{
  color: aliceblue;   
  font-size: large;

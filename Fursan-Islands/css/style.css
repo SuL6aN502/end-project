@@ -1,7 +1,7 @@
 section:nth-child(1){
     width: 100%;
     height: 45vh;
-    background: url(https://www.rcrc.gov.sa/wp-content/uploads/2019/07/mainpic-4.jpg) top no-repeat;
+    background: url(../img/sabq_2022-03_322b6309-e59a-405d-99c9-c08076e98c2b_DC8ED83A_8CEA_445C_838E_733866B26ED1.webp) center no-repeat;
     background-size: cover;
 }
 section:nth-child(2){
@@ -16,7 +16,6 @@ section:nth-child(2) hgroup p{
     font-size: 1.3rem;
 }
 span{
-
     color: #956C9E;
 }
 

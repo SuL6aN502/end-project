@@ -49,9 +49,13 @@ main section:nth-child(2) div input{
     font-size: 1rem;
     padding: 1%;
 }
+main section:nth-child(2) div input:focus{
+    outline: none;
+}
 main section:nth-child(2) div input::placeholder{
  color: aliceblue;   
  font-size: large;
+
 }
 main section:nth-child(2) div > a{
 width: 40%;
